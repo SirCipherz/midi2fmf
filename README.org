@@ -1,0 +1,19 @@
+#+TITLE: midi2fmf
+
+* Getting Started
+Just run this :
+#+BEGIN_SRC
+  $ ./midi2fmf.py music.mid
+#+END_SRC
+
+It will write the fmf file on stdout, if you want to write to a file you can do this :
+
+#+BEGIN_SRC
+  $ ./midi2fmf.py music.mid > music.fmf
+#+END_SRC
+
+* Thanks
+This is based on [[https://gist.github.com/nemanjan00/591bc3aedbb09a6f8fb623e862232870][this]] project with a few modifications of my own, including shell arguments support instead of modifying the script and a minimum note lengh (the original script was for some reason creating very short pauses while the flipper only supports 1/128 of a note as its very minimum).
+
+* License
+As the original script didn't featured any license and I didn't just reuploaded the file without any change, I took the liberty to license it under the GPLv3 license.
